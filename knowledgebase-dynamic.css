@@ -80,9 +80,54 @@
   font-weight: 700;
 }
 
+.kb-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+  color: #475569;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 15px;
+}
+
+.kb-page-button {
+  min-width: 96px;
+  border: 1px solid #2e5e99;
+  border-radius: 6px;
+  background: #fff;
+  color: #2e5e99;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 10px 14px;
+}
+
+.kb-page-button:disabled {
+  border-color: #cbd5e1;
+  color: #94a3b8;
+  cursor: default;
+}
+
+.kb-dynamic-message {
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.kb-notice {
+  margin: 0;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 @media (max-width: 900px) {
   .kb-grid {
     grid-template-columns: 1fr;
   }
-}
 
+  .kb-pagination {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
