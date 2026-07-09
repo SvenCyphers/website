@@ -1,0 +1,88 @@
+.kb-dynamic {
+  background: #f8fafc;
+  padding: 64px 20px;
+}
+
+.kb-dynamic-inner {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.kb-dynamic-head p {
+  margin: 0 0 8px;
+  color: #0d9488;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.kb-dynamic-head h2 {
+  margin: 0 0 28px;
+  color: #0f172a;
+  font-family: Outfit, Inter, Arial, sans-serif;
+  font-size: clamp(30px, 5vw, 44px);
+}
+
+.kb-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.kb-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.kb-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.kb-card-body {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+}
+
+.kb-card-body span {
+  justify-self: start;
+  background: #2e5e99;
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+.kb-card-body h2 {
+  margin: 0;
+  color: #0f172a;
+  font-family: Outfit, Inter, Arial, sans-serif;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.kb-card-body p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.kb-card-body a {
+  color: #2e5e99;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .kb-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -28,6 +28,17 @@
     event.preventDefault();
     event.stopImmediatePropagation();
 
+    if (!form.querySelector('input[name="website"]')) {
+      var honeypot = document.createElement('input');
+      honeypot.type = 'text';
+      honeypot.name = 'website';
+      honeypot.tabIndex = -1;
+      honeypot.autocomplete = 'off';
+      honeypot.style.position = 'absolute';
+      honeypot.style.left = '-9999px';
+      form.appendChild(honeypot);
+    }
+
     var button = getSubmitButton(form);
     var originalText = button ? button.textContent : '';
     if (button) {
@@ -36,9 +47,12 @@
     }
 
     try {
+      var formData = new FormData(form);
+      formData.set('form_name', form.getAttribute('name') || form.getAttribute('aria-label') || document.title);
+
       var response = await fetch('/api/contact', {
         method: 'POST',
-        body: new FormData(form),
+        body: formData,
         headers: {
           Accept: 'application/json'
         }
@@ -62,4 +76,3 @@
 
   document.addEventListener('submit', submitForm, true);
 })();
-

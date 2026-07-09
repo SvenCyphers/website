@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyphers beheer</title>
+  <link rel="stylesheet" href="/beheer/styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="login" id="login-panel">
+      <img src="/wp-content/uploads/2026/02/Logo-Cyphers-300x73.png" alt="Cyphers">
+      <h1>Beheer</h1>
+      <form id="login-form">
+        <label>
+          Wachtwoord
+          <input type="password" id="password" autocomplete="current-password" required>
+        </label>
+        <button type="submit">Inloggen</button>
+      </form>
+      <p class="message" id="login-message"></p>
+    </section>
+
+    <section class="dashboard hidden" id="dashboard">
+      <header class="topbar">
+        <div>
+          <strong>Cyphers beheer</strong>
+          <span>Formulieren en kennisbank</span>
+        </div>
+        <button type="button" id="logout-button">Uitloggen</button>
+      </header>
+
+      <nav class="tabs" aria-label="Beheer onderdelen">
+        <button type="button" class="active" data-tab="submissions">Inzendingen</button>
+        <button type="button" data-tab="articles">Kennisbank</button>
+      </nav>
+
+      <section class="panel" id="submissions-tab">
+        <div class="panel-header">
+          <h2>Formulierinzendingen</h2>
+          <button type="button" id="refresh-submissions">Verversen</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Naam</th>
+                <th>E-mail</th>
+                <th>Organisatie</th>
+                <th>Bericht</th>
+              </tr>
+            </thead>
+            <tbody id="submissions-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel hidden" id="articles-tab">
+        <div class="panel-header">
+          <h2>Kennisbankartikelen</h2>
+          <button type="button" id="new-article">Nieuw artikel</button>
+        </div>
+        <div class="articles-layout">
+          <aside class="article-list" id="article-list"></aside>
+          <form class="editor" id="article-form">
+            <label>
+              Titel
+              <input name="title" required>
+            </label>
+            <label>
+              Slug
+              <input name="slug" required>
+            </label>
+            <label>
+              Intro / samenvatting
+              <textarea name="excerpt" rows="3"></textarea>
+            </label>
+            <label>
+              Afbeelding URL
+              <input name="image_url" placeholder="/wp-content/uploads/...">
+            </label>
+            <div class="grid">
+              <label>
+                Categorie
+                <input name="category" value="Artikel">
+              </label>
+              <label>
+                Publicatiedatum
+                <input name="published_at" type="date">
+              </label>
+            </div>
+            <label>
+              Status
+              <select name="status">
+                <option value="draft">Draft</option>
+                <option value="published">Published</option>
+              </select>
+            </label>
+            <label>
+              Inhoud
+              <textarea name="content" rows="14" placeholder="<p>Schrijf hier je artikel...</p>"></textarea>
+            </label>
+            <div class="actions">
+              <button type="submit">Opslaan</button>
+              <a id="preview-link" href="/artikel/" target="_blank" rel="noreferrer">Preview</a>
+            </div>
+            <p class="message" id="article-message"></p>
+          </form>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="/beheer/beheer.js" defer></script>
+</body>
+</html>
