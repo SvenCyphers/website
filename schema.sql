@@ -41,7 +41,7 @@ VALUES
     'Een praktische blik op lokale taalmodellen en wanneer je ze veilig inzet.',
     '<p>Gebruik dit artikel als startpunt in het beheer. Vervang deze tekst door de definitieve inhoud zodra je de dynamische kennisbank gaat vullen.</p>',
     'Artikel',
-    '/wp-content/uploads/2026/03/AI-Technology.png',
+    '/wp-content/uploads/2026/02/AI-Technology.png',
     'published',
     '2026-05-26'
   ),
@@ -61,7 +61,7 @@ VALUES
     'Vijf veelvoorkomende risico''s bij dataplatforms en hoe je ze voorkomt.',
     '<p>Gebruik dit artikel als startpunt in het beheer. Vervang deze tekst door de definitieve inhoud zodra je de dynamische kennisbank gaat vullen.</p>',
     'Artikel',
-    '/wp-content/uploads/2026/03/Data-Engineering.png',
+    '/wp-content/uploads/2026/02/Data-Engineering.png',
     'published',
     '2026-05-26'
   );

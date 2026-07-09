@@ -78,8 +78,17 @@
             </label>
             <label>
               Afbeelding URL
-              <input name="image_url" placeholder="/wp-content/uploads/...">
+              <input name="image_url" id="image-url" placeholder="/wp-content/uploads/...">
             </label>
+            <div class="upload-row">
+              <label class="upload-field">
+                Afbeelding uploaden
+                <input type="file" id="image-upload" accept="image/png,image/jpeg,image/webp">
+              </label>
+              <figure class="image-preview hidden" id="image-preview">
+                <img src="" alt="">
+              </figure>
+            </div>
             <div class="grid">
               <label>
                 Categorie

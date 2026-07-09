@@ -1,4 +1,4 @@
-import { publicArticle } from '../../_lib/articles.js';
+import { publicArticleSummary } from '../../_lib/articles.js';
 import { json, serverError } from '../../_lib/http.js';
 
 export async function onRequestGet(context) {
@@ -15,7 +15,7 @@ export async function onRequestGet(context) {
        ${where}`
     ).first();
     const result = await context.env.DB.prepare(
-      `SELECT id, slug, title, excerpt, content, category, image_url, status, published_at, created_at, updated_at
+      `SELECT id, slug, title, excerpt, category, image_url, status, published_at, created_at, updated_at
        FROM knowledgebase_articles
        ${where}
        ORDER BY
@@ -29,7 +29,7 @@ export async function onRequestGet(context) {
     const total = Number(totalResult?.total || 0);
     return json({
       ok: true,
-      articles: (result.results || []).map(publicArticle),
+      articles: (result.results || []).map(publicArticleSummary),
       pagination: {
         page,
         per_page: perPage,

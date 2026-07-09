@@ -91,11 +91,13 @@
   function editArticle(article) {
     activeArticle = article;
     var form = qs('#article-form');
+    qs('#image-upload').value = '';
     Array.from(form.elements).forEach(function (field) {
       if (field.name && Object.prototype.hasOwnProperty.call(article, field.name)) {
         field.value = article[field.name] || '';
       }
     });
+    updateImagePreview(article.image_url || '');
     qs('#preview-link').href = '/artikel/?slug=' + encodeURIComponent(article.slug);
     renderArticles();
   }
@@ -164,6 +166,24 @@
 
   qs('#refresh-submissions').addEventListener('click', loadSubmissions);
   qs('#new-article').addEventListener('click', newArticle);
+  qs('#image-url').addEventListener('input', function (event) {
+    updateImagePreview(event.currentTarget.value);
+  });
+  qs('#image-upload').addEventListener('change', function (event) {
+    var file = event.currentTarget.files && event.currentTarget.files[0];
+    if (!file) {
+      return;
+    }
+    setMessage('#article-message', 'Afbeelding verwerken...');
+    compressImage(file).then(function (dataUrl) {
+      qs('#image-url').value = dataUrl;
+      updateImagePreview(dataUrl);
+      setMessage('#article-message', 'Afbeelding toegevoegd. Vergeet niet het artikel op te slaan.');
+    }).catch(function (error) {
+      setMessage('#article-message', error.message, true);
+      qs('#image-upload').value = '';
+    });
+  });
 
   qs('#article-form').addEventListener('submit', function (event) {
     event.preventDefault();
@@ -191,5 +211,56 @@
       showDashboard(false);
     });
   }
-})();
 
+  function updateImagePreview(src) {
+    var preview = qs('#image-preview');
+    var image = preview.querySelector('img');
+    image.src = src || '';
+    preview.classList.toggle('hidden', !src);
+  }
+
+  function compressImage(file) {
+    if (!file.type || !/^image\/(png|jpeg|webp)$/.test(file.type)) {
+      return Promise.reject(new Error('Gebruik een PNG, JPG of WebP afbeelding.'));
+    }
+    return new Promise(function (resolve, reject) {
+      var reader = new FileReader();
+      reader.onerror = function () {
+        reject(new Error('Afbeelding kon niet worden gelezen.'));
+      };
+      reader.onload = function () {
+        var image = new Image();
+        image.onerror = function () {
+          reject(new Error('Afbeelding kon niet worden verwerkt.'));
+        };
+        image.onload = function () {
+          var dataUrl = renderImage(image, 1400, 900, 0.82);
+          if (dataUrl.length > 450000) {
+            dataUrl = renderImage(image, 1000, 640, 0.72);
+          }
+          if (dataUrl.length > 450000) {
+            reject(new Error('Afbeelding is nog te groot. Kies een kleinere afbeelding.'));
+            return;
+          }
+          resolve(dataUrl);
+        };
+        image.src = reader.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function renderImage(image, maxWidth, maxHeight, quality) {
+    var ratio = Math.min(maxWidth / image.width, maxHeight / image.height, 1);
+    var width = Math.max(Math.round(image.width * ratio), 1);
+    var height = Math.max(Math.round(image.height * ratio), 1);
+    var canvas = document.createElement('canvas');
+    var context = canvas.getContext('2d');
+    canvas.width = width;
+    canvas.height = height;
+    context.fillStyle = '#fff';
+    context.fillRect(0, 0, width, height);
+    context.drawImage(image, 0, 0, width, height);
+    return canvas.toDataURL('image/jpeg', quality);
+  }
+})();

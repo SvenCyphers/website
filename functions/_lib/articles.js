@@ -23,6 +23,15 @@ export function normalizeArticle(input) {
   };
 }
 
+function normalizeImageUrl(value) {
+  const imageUrl = String(value || '').trim();
+  const movedImages = {
+    '/wp-content/uploads/2026/03/AI-Technology.png': '/wp-content/uploads/2026/02/AI-Technology.png',
+    '/wp-content/uploads/2026/03/Data-Engineering.png': '/wp-content/uploads/2026/02/Data-Engineering.png'
+  };
+  return movedImages[imageUrl] || imageUrl;
+}
+
 export function publicArticle(row) {
   return {
     id: row.id,
@@ -31,7 +40,7 @@ export function publicArticle(row) {
     excerpt: row.excerpt,
     content: row.content,
     category: row.category,
-    image_url: row.image_url,
+    image_url: normalizeImageUrl(row.image_url),
     status: row.status,
     published_at: row.published_at,
     created_at: row.created_at,
@@ -39,3 +48,17 @@ export function publicArticle(row) {
   };
 }
 
+export function publicArticleSummary(row) {
+  return {
+    id: row.id,
+    slug: row.slug,
+    title: row.title,
+    excerpt: row.excerpt,
+    category: row.category,
+    image_url: normalizeImageUrl(row.image_url),
+    status: row.status,
+    published_at: row.published_at,
+    created_at: row.created_at,
+    updated_at: row.updated_at
+  };
+}
