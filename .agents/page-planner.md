@@ -42,6 +42,7 @@ Controleer en plan:
 - Welke Cyphers-positionering moet zichtbaar worden?
 - Wat is de primaire CTA?
 - Welke secundaire CTA is logisch?
+- Welke bestaande header, navigatie en footer moeten exact hergebruikt worden?
 - Welke secties zijn nodig?
 - Heeft een sectie een natuurlijke volgorde of proceslogica?
 - Als er meer dan 6 items zijn: is een kaartgrid nog de beste vorm, of werkt een procesblok beter?
@@ -77,6 +78,11 @@ Layoutadvies:
 - Procesblok | kaartgrid | vergelijking | proofblok | checklist | FAQ
 - Reden:
 - Risico's:
+
+Vaste site-onderdelen:
+- Header/navigatie:
+- Footer:
+- Bestaande assets die hergebruikt moeten worden:
 
 Interne links:
 - ...

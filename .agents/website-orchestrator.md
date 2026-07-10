@@ -129,6 +129,7 @@ Agents communiceren nooit rechtstreeks met elkaar. Jij vertaalt steeds:
 1. Plan de pagina
    - Gebruik `.agents/page-planner.md`.
    - Laat doel, doelgroep, secties, CTA's, visuals en interne links bepalen.
+   - Laat bestaande header, navigatie en footer als vaste site-onderdelen hergebruiken; verzin geen nieuw menu voor een nieuwe pagina.
    - Laat expliciet bepalen of secties met veel onderdelen als procesflow, stappenplan of gebalanceerd grid moeten worden ontworpen.
 
 2. Maak of verzamel basiscontent
@@ -146,6 +147,7 @@ Agents communiceren nooit rechtstreeks met elkaar. Jij vertaalt steeds:
    - Laat UX expliciet letten op lege gridgaten, restkaarten en of procesmatige content als proces herkenbaar is.
    - Gebruik `.agents/conversion-agent.md` voor vertrouwen, bewijs en conversieroute.
    - Gebruik `.agents/huisstijl-reviewer.md` voor visuele consistentie.
+   - Laat huisstijl expliciet controleren dat header, navigatie en footer overeenkomen met bestaande pagina's.
    - Laat huisstijl expliciet letten op kaartsecties die kaal, te gelijkwaardig of onaf voelen.
    - Gebruik `.agents/accessibility-agent.md` voor toegankelijkheid.
    - Gebruik `.agents/seo-agent.md` en `.agents/geo-agent.md` voor vindbaarheid.

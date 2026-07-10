@@ -63,6 +63,14 @@ Controleer per pagina:
 - Is het logo niet vervormd, onscherp of te klein?
 - Heeft het logo voldoende witruimte?
 
+### Header En Navigatie
+
+- Hergebruikt de pagina het bestaande Cyphers-menu in plaats van een nieuw menu te bedenken?
+- Kloppen de hoofditems: Oplossingen, Kennisbank, Over ons, Werken bij en Contact?
+- Staat Zorgverkoop als onderdeel van Oplossingen wanneer die pagina actief is?
+- Zijn submenu's, actieve states en CTA-tekst consistent met bestaande pagina's?
+- Is de footer consistent met de rest van de site?
+
 ### Beeldgebruik
 
 - Past fotografie bij echte werksituaties, zorg, data of dashboards?

@@ -123,6 +123,68 @@
       color: var(--teal);
     }
 
+    .nav-item {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .nav-parent {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-parent::after {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: translateY(-2px) rotate(45deg);
+    }
+
+    .submenu {
+      position: absolute;
+      top: calc(100% + 14px);
+      left: 0;
+      min-width: 248px;
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(6px);
+      transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+    }
+
+    .nav-item:hover .submenu,
+    .nav-item:focus-within .submenu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .submenu a {
+      display: block;
+      padding: 9px 10px;
+      border-radius: 6px;
+      color: var(--slate);
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .submenu a:hover,
+    .submenu .active {
+      background: var(--mint);
+      color: var(--teal);
+      text-decoration: none;
+    }
+
     .nav-cta {
       display: inline-flex;
       align-items: center;
@@ -548,6 +610,21 @@
         gap: 14px;
       }
 
+      .nav-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .submenu {
+        position: static;
+        min-width: min(100vw - 48px, 320px);
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+      }
+
       .process-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
@@ -591,6 +668,17 @@
         width: 100%;
       }
 
+      .nav-links {
+        width: 100%;
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .nav-item,
+      .submenu {
+        width: 100%;
+      }
+
       .process-grid {
         grid-template-columns: 1fr;
       }
@@ -613,11 +701,20 @@
         <img src="/wp-content/uploads/2026/02/Logo-Cyphers-300x73.png" alt="Cyphers">
       </a>
       <div class="nav-links">
-        <a href="/oplossingen/">Oplossingen</a>
-        <a class="active" href="/zorgverkoop/" aria-current="page">Zorgverkoop</a>
+        <div class="nav-item">
+          <a class="nav-parent" href="/oplossingen/">Oplossingen</a>
+          <ul class="submenu" aria-label="Oplossingen submenu">
+            <li><a href="/consultancy/">Consultancy</a></li>
+            <li><a href="/business-intelligence-bi/">Business Intelligence (BI)</a></li>
+            <li><a href="/artificiele-intelligentie/">Artificiele Intelligentie</a></li>
+            <li><a class="active" href="/zorgverkoop/" aria-current="page">Zorgverkoop</a></li>
+            <li><a href="/radar-voor-ziekenhuis/">Radar voor ziekenhuis</a></li>
+          </ul>
+        </div>
         <a href="/kennisbank/">Kennisbank</a>
-        <a href="/waarom-cyphers/">Waarom Cyphers</a>
-        <a class="nav-cta" href="/contact/">Bespreek uw vraagstuk</a>
+        <a href="/over-ons/">Over ons</a>
+        <a href="/werken-bij/">Werken bij</a>
+        <a class="nav-cta" href="/contact/">Contact</a>
       </div>
     </nav>
   </header>
