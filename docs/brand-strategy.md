@@ -7,9 +7,15 @@ Status: werkdocument
 
 Cyphers helpt zorg- en overheidsorganisaties van versnipperde data naar voorspelbare sturing. Het merk staat voor domeinkennis, technische scherpte en praktische toepasbaarheid: data moet niet alleen kloppen, maar mensen helpen betere beslissingen te nemen.
 
+De kern van Cyphers is breder dan data alleen. Cyphers is bekend om domeinkennis, een no-nonsense aanpak en ervaring met uiteenlopende vraagstukken in de zorg. De echte meerwaarde zit in snel vertalen en schakelen: van zorginhoud naar data, van data naar oplossing, en van oplossing naar zelfstandig gebruik door de klant.
+
 Kernzin:
 
 > Cyphers is de datapartner voor zorg en overheid: van data naar inzicht en actie.
+
+Strategische scherpte:
+
+> Cyphers vertaalt complexe zorgvraagstukken snel naar praktische oplossingen die organisaties zelf leren gebruiken.
 
 Motto:
 
@@ -22,6 +28,10 @@ Cyphers positioneert zich als gespecialiseerde datapartner voor organisaties waa
 Positioneringsstatement:
 
 > Voor zorg- en overheidsorganisaties die grip willen krijgen op complexe data, biedt Cyphers BI, dashboards, AI en dataplatforms die versnipperde informatie vertalen naar concrete stuurinformatie. Anders dan generieke data-consultants combineert Cyphers technische expertise met domeinkennis, pragmatische implementatie en betrokkenheid bij de werkvloer.
+
+Aangescherpte positionering:
+
+> Cyphers is de no-nonsense kennispartner voor zorgorganisaties die complexe vraagstukken snel willen vertalen naar bruikbare oplossingen. We combineren domeinkennis, data-expertise en implementatiekracht, maar blijven eerlijk over wat wel en niet nodig is. Ons doel is niet om afhankelijkheid te creëren, maar om klanten sterker, zelfstandiger en beter stuurbaar te maken.
 
 ## 3. Doelgroepen
 
@@ -42,6 +52,8 @@ Secundaire doelgroepen:
 
 Veel organisaties beschikken over veel data, maar missen betrouwbare en bruikbare stuurinformatie. Data staat verspreid over systemen, rapportages zijn handmatig of inconsistent, dashboards sluiten niet altijd aan op besluitvorming, en AI blijft vaak abstract.
 
+Het vraagstuk is zelden alleen technisch. In de zorg raken data-uitdagingen aan capaciteit, financiering, kwaliteit, verantwoording, werkdruk, definities en veranderende processen. Juist daar maakt Cyphers het verschil: snel begrijpen wat er speelt, scherp maken wat nodig is en praktisch schakelen naar een oplossing die werkt.
+
 Cyphers helpt bij deze spanning:
 
 - Van losse spreadsheets naar betrouwbare dashboards.
@@ -49,18 +61,23 @@ Cyphers helpt bij deze spanning:
 - Van technische data naar begrijpelijke inzichten.
 - Van rapportage naar concrete actie op de werkvloer.
 - Van AI-hype naar toepasbare, veilige en relevante oplossingen.
+- Van afhankelijkheid van externe experts naar teams die zelf beter kunnen sturen.
 
 ## 5. Merkbelofte
 
 Cyphers geeft organisaties grip op data, zodat zij sneller, betrouwbaarder en met meer vertrouwen kunnen sturen.
 
+Daar hoort een eerlijke belofte bij: Cyphers adviseert zichzelf liever weg dan dat we onnodige complexiteit verkopen. We helpen klanten begrijpen, gebruiken en beheren wat we samen bouwen, zodat onze rol kleiner kan worden naarmate hun eigen vermogen groeit.
+
 Onderliggende bewijsvoering:
 
 - Domeinkennis in zorg en overheid.
+- Ervaring met uiteenlopende zorgvraagstukken, van stuurinformatie tot adoptie en implementatie.
 - Praktische ervaring met BI, dashboards, AI en dataplatforms.
 - Focus op implementatie, adoptie en bruikbaarheid.
 - Inzichten die aansluiten op echte werkprocessen.
 - Menselijke benadering: professioneel, toegankelijk en met humor.
+- Eerlijk advies, ook wanneer dat betekent dat een oplossing kleiner, simpeler of intern op te pakken is.
 
 ## 6. Merkpersoonlijkheid
 
@@ -71,12 +88,15 @@ Cyphers voelt als:
 - Betrouwbaar en zorgvuldig.
 - Energievol en jong van geest.
 - Menselijk, betrokken en nuchter.
+- Eerlijk en no-nonsense.
 - Gericht op resultaat en maatschappelijke impact.
+- Gericht op overdracht: klanten moeten het zelf kunnen.
 
 Niet:
 
 - Corporate en koud.
 - Vaag consultancy-jargon.
+- Een partij die afhankelijkheid verkoopt.
 - AI-hype zonder context.
 - Te technisch voor beslissers.
 - Te simplistisch voor data-experts.
@@ -88,10 +108,13 @@ De toon is helder, deskundig en praktisch. Cyphers mag complexe onderwerpen eenv
 Schrijfprincipes:
 
 - Begin met het probleem of de gewenste uitkomst.
+- Begin bij het zorgvraagstuk, niet bij data als abstract onderwerp.
 - Vertaal techniek naar waarde voor de organisatie.
+- Laat zien hoe Cyphers snel schakelt tussen domeinkennis, analyse en oplossing.
 - Gebruik concrete woorden: inzicht, grip, sturing, capaciteit, kwaliteit, actie.
 - Leg vaktermen uit waar nodig.
 - Spreek met vertrouwen, zonder grootspraak.
+- Wees eerlijk over grenzen, keuzes en wat de klant zelf kan doen.
 - Gebruik actieve zinnen.
 
 Voorbeeldtoon:
@@ -114,7 +137,10 @@ Ondersteunende boodschappen:
 
 - Data, AI en dashboards die grip geven op capaciteit, financiën en kwaliteit.
 - Van versnipperde data naar voorspelbare sturing.
+- Van complex zorgvraagstuk naar praktische oplossing.
+- Domeinkennis die zorgt voor sneller begrip en betere keuzes.
 - Technologie is middel, niet doel.
+- Wij maken klanten sterker, niet afhankelijker.
 - Wij zorgen dat cijfers veranderen in concrete acties.
 - BI-oplossingen die aansluiten op de praktijk van zorg en overheid.
 - AI en data science worden pas waardevol als ze veilig, begrijpelijk en toepasbaar zijn.
@@ -200,6 +226,7 @@ Doel van content:
 
 - Vertrouwen opbouwen bij beslissers.
 - Expertise bewijzen bij data-professionals.
+- Domeinkennis en ervaring in de zorg expliciet zichtbaar maken.
 - Complexe data- en AI-thema’s praktisch maken.
 - Leads genereren voor adviesgesprekken.
 - Cyphers positioneren als specialist voor zorg en overheid.
@@ -230,6 +257,7 @@ Contentpijlers:
    - Van cijfers naar gedrag.
    - Dashboards die daadwerkelijk gebruikt worden.
    - De werkvloer als toetssteen.
+   - Overdracht, zelfstandigheid en eerlijk advies.
 
 ## 12. Websiteboodschap Per Pagina
 
@@ -329,22 +357,30 @@ Lange termijn:
 Altijd doen:
 
 - Leg uit wat het oplevert.
+- Koppel data altijd aan het echte zorg- of stuurvraagstuk.
 - Maak data menselijk en toepasbaar.
 - Verbind techniek aan zorgkwaliteit, capaciteit of besluitvorming.
+- Laat zien dat Cyphers eerlijk adviseert en klanten zelfstandiger maakt.
 - Schrijf helder en concreet.
 - Laat professionaliteit en warmte samenkomen.
 
 Niet doen:
 
 - Technologie als doel presenteren.
+- Data als generiek containerbegrip gebruiken zonder zorgcontext.
 - Teveel abstracte consultancytaal gebruiken.
 - AI groter maken dan de praktische waarde.
 - Claims doen zonder bewijs.
 - De zorgcontext vergeten.
+- Klanten afhankelijk maken in de taal of propositie.
 
 ## 17. Elevator Pitch
 
 Cyphers helpt zorg- en overheidsorganisaties grip krijgen op data. Met BI, dashboards, AI en dataplatforms vertalen we versnipperde informatie naar betrouwbare stuurinformatie. Zo ontstaan inzichten die niet alleen rapporteren wat er gebeurt, maar teams helpen betere beslissingen te nemen en concrete acties te zetten.
+
+Aangescherpte elevator pitch:
+
+Cyphers helpt zorgorganisaties complexe vraagstukken snel vertalen naar praktische data-oplossingen. We combineren domeinkennis, technische expertise en een no-nonsense aanpak. Daarbij zijn we eerlijk over wat nodig is, bouwen we wat werkt en dragen we kennis over, zodat klanten steeds meer zelf kunnen.
 
 ## 18. One-Liners
 
@@ -354,6 +390,9 @@ Cyphers helpt zorg- en overheidsorganisaties grip krijgen op data. Met BI, dashb
 - Data, AI en dashboards die grip geven.
 - Cijfers die veranderen in concrete acties.
 - De datapartner voor zorg en overheid.
+- Domeinkennis die sneller tot oplossingen leidt.
+- Eerlijk advies, praktische oplossingen, zelfstandige klanten.
+- We maken data bruikbaar en onszelf uiteindelijk overbodig.
 
 ## 19. Praktische Toets Voor Nieuwe Content
 
@@ -362,6 +401,8 @@ Gebruik deze vragen voordat nieuwe pagina’s, artikelen of campagnes live gaan:
 - Is binnen vijf seconden duidelijk voor wie dit is?
 - Wordt het klantprobleem concreet benoemd?
 - Is de technische oplossing vertaald naar waarde?
+- Is duidelijk welk zorg- of organisatievraagstuk erachter zit?
+- Laat de tekst zien dat Cyphers eerlijk adviseert en overdraagt?
 - Past de toon bij zorg, overheid en professionele besluitvorming?
 - Is er een duidelijke volgende stap?
 - Staat er bewijs of praktijkcontext bij?
