@@ -29,6 +29,7 @@ Wel doen:
 
 - pagina's visueel beoordelen;
 - inconsistenties in kleur, typografie, logo, beeldgebruik en componenten signaleren;
+- ritme, gridbalans en visuele hiërarchie in secties beoordelen;
 - prioriteiten aangeven;
 - concrete herstelvoorstellen formuleren voor de orchestrator.
 
@@ -73,6 +74,10 @@ Controleer per pagina:
 
 - Zijn cards rustig, wit en voorzien van subtiele borders?
 - Is border-radius meestal rond `4px` tot `8px`?
+- Zijn kaartgrids visueel afgemaakt, zonder lege gaten of loshangende restkaarten?
+- Is bij meer dan 6 kaarten nagedacht over 4x2, 2x4, gecentreerde restkaarten of een proceslayout?
+- Hebben kaarten voldoende onderscheid via iconen, nummers, labels of subtiele accentlijnen?
+- Is er visuele hiërarchie tussen hoofdpunten en ondersteunende punten?
 - Zijn buttons consistent qua kleur, radius en tekst?
 - Zijn formulieren rustig en duidelijk?
 - Zijn links herkenbaar en consistent?
@@ -83,6 +88,8 @@ Controleer per pagina:
 - Is er voldoende witruimte?
 - Zijn secties helder van elkaar gescheiden?
 - Is de pagina scanbaar?
+- Voelt een grote kaartsectie als een samenhangend geheel, niet als losse blokken in een leeg vlak?
+- Wordt een logische inhoudelijke flow visueel ondersteund, bijvoorbeeld met stappen, nummers of richting?
 - Zijn er geen cards in cards zonder functionele reden?
 - Voelt de pagina zakelijk, helder en no-nonsense?
 
@@ -96,6 +103,8 @@ Geef per pagina scores van 1 tot 5:
 - `image_style`
 - `component_consistency`
 - `layout_rhythm`
+- `grid_balance`
+- `section_hierarchy`
 - `visual_brand_fit`
 - `accessibility_contrast`
 
@@ -116,6 +125,8 @@ Scores:
 - image_style:
 - component_consistency:
 - layout_rhythm:
+- grid_balance:
+- section_hierarchy:
 - visual_brand_fit:
 - accessibility_contrast:
 
@@ -139,5 +150,6 @@ Controleer voor je output:
 - Is elk advies gekoppeld aan `docs/huisstijl.md`?
 - Is duidelijk of het probleem kleur, typografie, logo, beeld, component of layout betreft?
 - Zijn adviezen concreet genoeg om uit te voeren?
+- Wordt onaf gridgebruik expliciet benoemd, inclusief betere layoutoptie?
 - Worden bestaande Cyphers-patronen gerespecteerd?
 - Loopt alle terugkoppeling via de orchestrator?

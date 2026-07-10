@@ -18,6 +18,7 @@ Alle agent-naar-agent communicatie loopt via jou. SEO, GEO, content, storytellin
 
 - `.agents/page-planner.md`
   - maakt vooraf de paginastructuur, doelgroep, secties, CTA's, visuals en interne links;
+  - bepaalt of content beter werkt als proces, stappenplan, kaartgrid, vergelijking of proofblok;
   - schrijft geen volledige copy en voert niets uit.
 
 - `.agents/website-reviewer.md`
@@ -27,6 +28,7 @@ Alle agent-naar-agent communicatie loopt via jou. SEO, GEO, content, storytellin
 
 - `.agents/ux-reviewer.md`
   - reviewt flow, scanbaarheid, mobiele bruikbaarheid, CTA-plaatsing en formulierlogica;
+  - let op gridbalans, procesflow en onaf aanvoelende kaartsecties;
   - levert UX-aanbevelingen, maar voert niets uit.
 
 - `.agents/conversion-agent.md`
@@ -55,7 +57,7 @@ Alle agent-naar-agent communicatie loopt via jou. SEO, GEO, content, storytellin
 
 - `.agents/huisstijl-reviewer.md`
   - reviewt pagina's op visuele consistentie met `docs/huisstijl.md`;
-  - toetst kleuren, logo's, typografie, beeldgebruik, componenten en layout;
+  - toetst kleuren, logo's, typografie, beeldgebruik, componenten, gridbalans en layout;
   - levert aanbevelingen, maar voert niets uit.
 
 - `.agents/seo-agent.md`
@@ -127,6 +129,7 @@ Agents communiceren nooit rechtstreeks met elkaar. Jij vertaalt steeds:
 1. Plan de pagina
    - Gebruik `.agents/page-planner.md`.
    - Laat doel, doelgroep, secties, CTA's, visuals en interne links bepalen.
+   - Laat expliciet bepalen of secties met veel onderdelen als procesflow, stappenplan of gebalanceerd grid moeten worden ontworpen.
 
 2. Maak of verzamel basiscontent
    - Gebruik `.agents/content-writer.md` voor webcopy.
@@ -140,8 +143,10 @@ Agents communiceren nooit rechtstreeks met elkaar. Jij vertaalt steeds:
 4. Review concept
    - Gebruik `.agents/website-reviewer.md` voor tekst en strategie.
    - Gebruik `.agents/ux-reviewer.md` voor flow, mobiel, CTA-plaatsing en formulierlogica.
+   - Laat UX expliciet letten op lege gridgaten, restkaarten en of procesmatige content als proces herkenbaar is.
    - Gebruik `.agents/conversion-agent.md` voor vertrouwen, bewijs en conversieroute.
    - Gebruik `.agents/huisstijl-reviewer.md` voor visuele consistentie.
+   - Laat huisstijl expliciet letten op kaartsecties die kaal, te gelijkwaardig of onaf voelen.
    - Gebruik `.agents/accessibility-agent.md` voor toegankelijkheid.
    - Gebruik `.agents/seo-agent.md` en `.agents/geo-agent.md` voor vindbaarheid.
    - Gebruik `.agents/internal-linking-agent.md` voor linkstructuur.
@@ -178,6 +183,14 @@ Gebruik deze grenzen om dubbele of tegenstrijdige agents te voorkomen:
 
 Als twee agents hetzelfde punt signaleren, bundel het als één issue met meerdere redenen. Maak geen dubbele implementatieopdrachten.
 
+Designpatroon voor veel herhaalitems:
+
+- Als een sectie een duidelijke inhoudelijke volgorde heeft, behandel die als proces of stappenplan.
+- Als een sectie 7, 8 of 10 kaarten heeft, voorkom een onaf 3-koloms grid met restitems.
+- Gebruik bij 8 items liever 4x2 op desktop, 2x4 op tablet of een bewust gecentreerde laatste rij.
+- Maak hiërarchie zichtbaar met subtiele nummers, iconen, labels of accentlijnen.
+- Houd sectiekoppen binnen middensecties compacter dan hero-koppen.
+
 ## Conflictregels
 
 Als SEO en GEO botsen:
@@ -213,6 +226,12 @@ Als UX en conversie botsen:
 - Kies de route met minder frictie voor de bezoeker.
 - Gebruik geen extra CTA als die de pagina onrustig maakt.
 - Vertrouwen gaat boven druk zetten.
+
+Als UX en huisstijl botsen:
+
+- Kies de oplossing die de inhoud beter scanbaar maakt zonder de huisstijl te breken.
+- Procesmatige inhoud mag visueel meer richting en ritme krijgen, zolang kleuren, typografie en componentstijl Cyphers blijven.
+- Een gebalanceerd grid gaat boven strikt herhalen van kaartbreedtes wanneer de sectie anders onaf voelt.
 
 Als accessibility en huisstijl botsen:
 

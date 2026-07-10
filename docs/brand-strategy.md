@@ -183,9 +183,25 @@ Belofte:
 
 Cyphers kent sectorspecifieke uitdagingen zoals capaciteit, productie, wachttijden, financiën en kwaliteit. Daardoor kan de vertaalslag sneller en concreter.
 
+Zorgverkoop draait primair om het maken van passende afspraken met verzekeraars. Data en dashboards ondersteunen dat proces, maar zijn niet het doel. Een sterke zorgverkoopfunctie heeft grip op plafonds, tarieven, volumes, inkoopvoorwaarden, verzekeringsvoorwaarden, productieafspraken, prognoses, risico's en afrekeningen.
+
+Belangrijke onderdelen van zorgverkoop:
+
+- Afspraken maken over plafonds, tarieven, volumes en voorwaarden.
+- Afspraken centraal borgen, beheren en beschikbaar maken.
+- Contractafspraken vertalen naar data, definities en stuurinformatie.
+- Afspraken monitoren op realisatie, afwijkingen en risico's.
+- Forecasts en prognoses maken op productie, patientaantallen, financiering en contractruimte.
+- Tijdig bijsturen en helder communiceren met interne stakeholders en verzekeraars.
+- Afrekeningen voorbereiden, controleren en onderbouwen.
+
+Wijzigingen in wet- en regelgeving, inkoopvoorwaarden of verzekeringsvoorwaarden kunnen impact hebben op productstructuur, financiering, patientaantallen, prognoses en risico's. Een goede zorgverkoopanalist of zorgverkoopafdeling ziet deze veranderingen aankomen, vertaalt ze naar data en voert daarover het gesprek met zorgverkopers, finance, bestuur en verzekeraars.
+
+Veel ziekenhuizen gebruiken al bestaande tooling van derde partijen en hebben eigen rapportages. Cyphers sluit daarop aan: we kennen de dagelijkse zorgverkooppraktijk, begrijpen bestaande tooling en kunnen nieuwe rapportages ontwikkelen bovenop wat er al staat. Daarnaast ontwikkelt Cyphers specifieke tooling waar de praktijk kwalitatief beter van wordt, zoals een prijslijsten-tool voor dure geneesmiddelen.
+
 Belofte:
 
-> Data-oplossingen die passen bij de realiteit van zorgorganisaties.
+> Data-oplossingen die zorgverkoop helpen betere afspraken te maken, risico's tijdig te zien en gesprekken met verzekeraars goed te onderbouwen.
 
 ## 10. Visuele Richting
 

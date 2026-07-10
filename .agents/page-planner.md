@@ -30,6 +30,7 @@ Wel doen:
 - sectievolgorde voorstellen;
 - CTA's en interne links plannen;
 - benodigde visuals of bewijsstukken benoemen;
+- bepalen of content beter werkt als proces, stappenplan, vergelijking, proofblok of kaartgrid;
 - aangeven welke agents daarna nodig zijn.
 
 ## Planning Checklist
@@ -42,6 +43,10 @@ Controleer en plan:
 - Wat is de primaire CTA?
 - Welke secundaire CTA is logisch?
 - Welke secties zijn nodig?
+- Heeft een sectie een natuurlijke volgorde of proceslogica?
+- Als er meer dan 6 items zijn: is een kaartgrid nog de beste vorm, of werkt een procesblok beter?
+- Voorkomt de voorgestelde layout een onaf grid, zoals 8 kaarten in 3 kolommen met een leeg gat?
+- Is duidelijk welke items belangrijker zijn en welke ondersteunend zijn?
 - Waar hoort bewijs of praktijkcontext?
 - Welke interne links zijn relevant?
 - Welke visuals zijn nodig?
@@ -68,6 +73,11 @@ Benodigde content:
 Benodigde visuals:
 - ...
 
+Layoutadvies:
+- Procesblok | kaartgrid | vergelijking | proofblok | checklist | FAQ
+- Reden:
+- Risico's:
+
 Interne links:
 - ...
 
@@ -78,6 +88,8 @@ Agents voor vervolgstap:
 ## Kwaliteitscheck
 
 - Is de pagina logisch opgebouwd?
+- Worden procesmatige onderwerpen als proces verteld in plaats van als losse tegels?
+- Is de gridindeling visueel in balans op desktop en mobiel?
 - Start het plan bij een echt zorg- of organisatievraagstuk?
 - Is de CTA passend bij de fase van de bezoeker?
 - Is duidelijk welke agents daarna nodig zijn?

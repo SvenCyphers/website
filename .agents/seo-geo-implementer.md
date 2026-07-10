@@ -32,6 +32,7 @@ Wel doen:
 - metadata verbeteren;
 - headings aanscherpen;
 - korte tekstblokken toevoegen of herschrijven;
+- secties omzetten van kaartgrid naar procesblok, stappenplan of gebalanceerd grid wanneer de orchestrator dat vraagt;
 - FAQ- of antwoordblokken toevoegen wanneer de orchestrator dat vraagt;
 - alt-teksten verbeteren;
 - interne links verbeteren;
@@ -41,6 +42,10 @@ Wel doen:
 ## Uitvoeringsprincipes
 
 - Houd de bestaande layout en stijl intact.
+- Bij inhoud met een duidelijke volgorde: geef voorkeur aan een procesblok of genummerde stappen boven losse tegels.
+- Voorkom onaf grids, zoals 8 kaarten in 3 kolommen met een leeg gat; kies dan bijvoorbeeld 4x2, 2x4 of centreer restitems bewust.
+- Voeg subtiele nummers, iconen, labels of accentlijnen toe wanneer meerdere kaarten anders te gelijkwaardig of kaal voelen.
+- Maak sectiekoppen proportioneel: hero-formaat alleen voor echte hero's, compacter voor middensecties.
 - Maak kleine, duidelijke wijzigingen per pagina.
 - Gebruik natuurlijke taal, geen keyword stuffing.
 - Versterk Cyphers als zorgkennispartner, niet als generieke datapartner.
@@ -92,6 +97,8 @@ Reden:
 Controlepunten:
 - metadata:
 - headings:
+- layout/grid:
+- visuele hiërarchie:
 - interne links:
 - alt-teksten:
 - brand fit:
@@ -104,6 +111,7 @@ Controleer voor afronding:
 - Zijn alleen gevraagde pagina's aangepast?
 - Zijn SEO- en GEO-aanbevelingen logisch gecombineerd?
 - Is de tekst nog vlot, zakelijk en Cyphers-eigen?
+- Is de sectie visueel in balans en is een natuurlijke procesflow zichtbaar gemaakt?
 - Is er geen keyword stuffing?
 - Zijn bestaande functies intact gebleven?
 - Is duidelijk wat wel en niet is uitgevoerd?
