@@ -85,6 +85,8 @@ Controleer per pagina:
 - Zijn kaartgrids visueel afgemaakt, zonder lege gaten of loshangende restkaarten?
 - Is bij meer dan 6 kaarten nagedacht over 4x2, 2x4, gecentreerde restkaarten of een proceslayout?
 - Hebben kaarten voldoende onderscheid via iconen, nummers, labels of subtiele accentlijnen?
+- Worden zware zwarte bullets of zwarte genummerde badges vermeden?
+- Zijn genummerde stappen subtiel vormgegeven met Cyphers-kleuren, bijvoorbeeld mint/teal, lijnwerk of lichte labels?
 - Is er visuele hiërarchie tussen hoofdpunten en ondersteunende punten?
 - Zijn buttons consistent qua kleur, radius en tekst?
 - Zijn formulieren rustig en duidelijk?

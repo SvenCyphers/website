@@ -45,6 +45,7 @@ Wel doen:
 - Bij inhoud met een duidelijke volgorde: geef voorkeur aan een procesblok of genummerde stappen boven losse tegels.
 - Voorkom onaf grids, zoals 8 kaarten in 3 kolommen met een leeg gat; kies dan bijvoorbeeld 4x2, 2x4 of centreer restitems bewust.
 - Voeg subtiele nummers, iconen, labels of accentlijnen toe wanneer meerdere kaarten anders te gelijkwaardig of kaal voelen.
+- Gebruik geen zware zwarte bullets of zwarte genummerde badges; maak nummering subtiel met Cyphers-kleuren, lijnwerk of lichte labels.
 - Maak sectiekoppen proportioneel: hero-formaat alleen voor echte hero's, compacter voor middensecties.
 - Maak kleine, duidelijke wijzigingen per pagina.
 - Gebruik natuurlijke taal, geen keyword stuffing.

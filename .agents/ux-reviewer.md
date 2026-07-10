@@ -99,4 +99,6 @@ Aanbevolen wijzigingen:
 - Is elk advies gericht op bezoekersgedrag?
 - Is duidelijk welke frictie wordt opgelost?
 - Is aangegeven of een sectie beter als procesblok, stappenplan of kaartgrid werkt?
+- Vermijdt het ontwerp zware zwarte bullets of zwarte genummerde badges die onnodig hard en dominant aanvoelen?
+- Zijn stappen of opsommingen scanbaar zonder dat de nummering visueel harder wordt dan de inhoud?
 - Past het advies bij de huisstijl en strategie?
