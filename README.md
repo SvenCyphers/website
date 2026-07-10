@@ -30,3 +30,13 @@ Voer voor commits of pushes deze check uit:
 ```
 
 De check controleert onder andere op mogelijke secrets, riskante JavaScript-patronen, admin-API's zonder auth, ontbrekende hardening en whitespace-fouten. GitHub draait dezelfde check automatisch bij pushes naar `main` en bij pull requests.
+
+## Content writer agent
+
+Voor consistente websitecopy staat er een content writer agent in:
+
+```text
+.agents/content-writer.md
+```
+
+Deze agent vertaalt `docs/brand-strategy.md` naar vlotte, zakelijke copy voor pagina's, kennisbankartikelen, SEO-snippets en CTA's.
