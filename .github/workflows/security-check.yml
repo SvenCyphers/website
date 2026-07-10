@@ -1,0 +1,18 @@
+name: Security check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  security-check:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run security check
+        shell: pwsh
+        run: ./scripts/security-check.ps1
