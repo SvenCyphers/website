@@ -1,0 +1,47 @@
+.elementor-element-f6bb50b.logo-carousel-ready {
+  --logo-slides-visible: 6;
+}
+
+.elementor-element-f6bb50b.logo-carousel-ready .elementor-image-carousel-wrapper {
+  overflow: hidden;
+}
+
+.elementor-element-f6bb50b.logo-carousel-ready .elementor-image-carousel {
+  display: flex;
+  align-items: center;
+  transition: transform 500ms ease;
+  will-change: transform;
+}
+
+.elementor-element-f6bb50b.logo-carousel-ready .swiper-slide {
+  flex: 0 0 calc(100% / var(--logo-slides-visible));
+  max-width: calc(100% / var(--logo-slides-visible));
+  padding: 0 14px;
+}
+
+.elementor-element-f6bb50b.logo-carousel-ready .swiper-slide-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 76px;
+}
+
+.elementor-element-f6bb50b.logo-carousel-ready .swiper-slide-image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 58px;
+  object-fit: contain;
+}
+
+.elementor-element-f6bb50b.logo-carousel-ready .elementor-swiper-button {
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media (max-width: 767px) {
+  .elementor-element-f6bb50b.logo-carousel-ready {
+    --logo-slides-visible: 2;
+  }
+}
