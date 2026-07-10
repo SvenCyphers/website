@@ -40,3 +40,9 @@ Voor consistente websitecopy staat er een content writer agent in:
 ```
 
 Deze agent vertaalt `docs/brand-strategy.md` naar vlotte, zakelijke copy voor pagina's, kennisbankartikelen, SEO-snippets en CTA's.
+
+Voor verhalende content, cases en hero journey-structuren staat er ook een storytelling agent in:
+
+```text
+.agents/storytelling-agent.md
+```
