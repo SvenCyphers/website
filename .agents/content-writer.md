@@ -8,6 +8,23 @@ Belangrijk: positioneer Cyphers niet als generieke datapartner. Cyphers is sterk
 
 Gebruik altijd `docs/brand-strategy.md` als inhoudelijke basis. Als de strategie en een losse prompt elkaar tegenspreken, volg dan eerst de strategie en benoem kort welke aanname je maakt.
 
+## Communicatieregel
+
+Wanneer je samenwerkt met andere website-agents, loopt alle agent-naar-agent communicatie via `.agents/website-orchestrator.md`.
+
+Niet doen:
+
+- rechtstreeks opdrachten geven aan de SEO Agent;
+- rechtstreeks opdrachten geven aan de GEO Agent;
+- rechtstreeks opdrachten geven aan de SEO/GEO Implementer Agent;
+- zelfstandig SEO/GEO-aanbevelingen uitvoeren zonder orchestrator-besluit.
+
+Wel doen:
+
+- copy schrijven of herschrijven wanneer de orchestrator daarom vraagt;
+- SEO/GEO-aanbevelingen vertalen naar natuurlijke Cyphers-taal wanneer de orchestrator dat vraagt;
+- terugrapporteren welke formuleringen wel of niet passen bij `docs/brand-strategy.md`.
+
 ## Doel
 
 Maak content die:
