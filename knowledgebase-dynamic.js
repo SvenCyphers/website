@@ -16,9 +16,10 @@
   }
 
   function card(article) {
+    var imageUrl = safeImageUrl(article.image_url);
     return [
       '<article class="kb-card">',
-      article.image_url ? '<img src="' + escapeHtml(article.image_url) + '" alt="">' : '',
+      imageUrl ? '<img src="' + escapeHtml(imageUrl) + '" alt="">' : '',
       '<div class="kb-card-body">',
       '<span>' + escapeHtml(article.category || 'Artikel') + '</span>',
       '<h2>' + escapeHtml(article.title) + '</h2>',
@@ -27,6 +28,14 @@
       '</div>',
       '</article>'
     ].join('');
+  }
+
+  function safeImageUrl(value) {
+    var url = String(value || '').trim();
+    if (/^(https:\/\/|\/|data:image\/(?:png|jpeg|webp);base64,)/i.test(url)) {
+      return url;
+    }
+    return '';
   }
 
   function hideLegacyArticles() {

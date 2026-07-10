@@ -1,4 +1,7 @@
 import { json, serverError } from '../_lib/http.js';
+const MAX_BODY_BYTES = 1024 * 1024;
+const MAX_FIELDS = 80;
+const MAX_FIELD_LENGTH = 4000;
 
 function cleanKey(key) {
   return key
@@ -12,8 +15,9 @@ function appendField(fields, key, value) {
     return;
   }
 
+  const safeValue = String(value).slice(0, MAX_FIELD_LENGTH);
   if (fields[key] === undefined) {
-    fields[key] = value;
+    fields[key] = safeValue;
     return;
   }
 
@@ -21,7 +25,7 @@ function appendField(fields, key, value) {
     fields[key] = [fields[key]];
   }
 
-  fields[key].push(value);
+  fields[key].push(safeValue);
 }
 
 function pick(fields, names) {
@@ -75,11 +79,21 @@ export async function onRequestPost(context) {
       return json({ ok: false, error: 'D1 binding DB ontbreekt.' }, 500);
     }
 
+    const contentLength = Number(context.request.headers.get('content-length') || 0);
+    if (contentLength > MAX_BODY_BYTES) {
+      return json({ ok: false, error: 'Formulier is te groot.' }, 413);
+    }
+
     const formData = await context.request.formData();
     const fields = {};
     const labels = fieldLabels();
+    let fieldCount = 0;
 
     for (const [rawKey, rawValue] of formData.entries()) {
+      fieldCount += 1;
+      if (fieldCount > MAX_FIELDS) {
+        return json({ ok: false, error: 'Te veel velden.' }, 413);
+      }
       const key = cleanKey(rawKey);
       if (key === 'website' || key === 'url') {
         return json({ ok: true });

@@ -3,6 +3,8 @@ export function json(data, status = 200, headers = {}) {
     status,
     headers: {
       'content-type': 'application/json; charset=utf-8',
+      'x-content-type-options': 'nosniff',
+      'cache-control': 'no-store',
       ...headers
     }
   });
@@ -13,8 +15,8 @@ export function badRequest(message) {
 }
 
 export function serverError(error) {
-  const message = error instanceof Error ? error.message : 'Onbekende fout';
-  return json({ ok: false, error: message }, 500);
+  console.error(error);
+  return json({ ok: false, error: 'Interne serverfout.' }, 500);
 }
 
 export async function readJson(request) {
@@ -24,4 +26,3 @@ export async function readJson(request) {
     return null;
   }
 }
-

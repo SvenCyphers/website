@@ -8,18 +8,39 @@ export function slugify(value) {
     .slice(0, 120);
 }
 
+function limit(value, maxLength) {
+  return String(value || '').trim().slice(0, maxLength);
+}
+
+function normalizeImageInput(value) {
+  const imageUrl = limit(value, 500000);
+  if (!imageUrl) {
+    return '';
+  }
+  if (imageUrl.startsWith('/')) {
+    return imageUrl;
+  }
+  if (/^https:\/\/[^\s"'<>]+$/i.test(imageUrl)) {
+    return imageUrl;
+  }
+  if (/^data:image\/(?:png|jpeg|webp);base64,[a-z0-9+/=]+$/i.test(imageUrl) && imageUrl.length <= 450000) {
+    return imageUrl;
+  }
+  return '';
+}
+
 export function normalizeArticle(input) {
-  const title = String(input.title || '').trim();
+  const title = limit(input.title, 180);
   const slug = slugify(input.slug || title);
   return {
     slug,
     title,
-    excerpt: String(input.excerpt || '').trim(),
-    content: String(input.content || '').trim(),
-    category: String(input.category || 'Artikel').trim() || 'Artikel',
-    image_url: String(input.image_url || '').trim(),
+    excerpt: limit(input.excerpt, 500),
+    content: limit(input.content, 60000),
+    category: limit(input.category || 'Artikel', 80) || 'Artikel',
+    image_url: normalizeImageInput(input.image_url),
     status: input.status === 'published' ? 'published' : 'draft',
-    published_at: String(input.published_at || '').trim()
+    published_at: /^\d{4}-\d{2}-\d{2}$/.test(String(input.published_at || '')) ? String(input.published_at) : ''
   };
 }
 
